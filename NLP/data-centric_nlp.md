@@ -29,15 +29,23 @@
 
 ### 주요 전략
 1. Data Management: 새로운 데이터 수집
-2. Data Quality Control
-   - Data Filtering: 이상치 탐지 및 제거
-   - Data Consistency: 잘못된 값 및 라벨 오류 수정
-   - Label Consistency: 라벨링 방법 체계화 (크라우드소싱 데이터 등)
-   - Data Tool: 라벨링 도구를 사용한 데이터 개선
-3. Data Augmentation: 사전 지식을 인코딩하기 위한 예제 추가
-4. Synthetic Data: 인공적으로 생성된 데이터 활용
-5. Feature Engineering: 데이터 표현 방식 조정
-6. 데이터 이해를 위한 AI 알고리즘
+2. 토큰화 방식 교체
+3. Data Quality Control
+    - Data Filtering: 이상치 탐지 및 제거
+        - Parallel Corpus Filtering
+        - rule base + NMT Based
+    - Data Cleaning: 잘못된 값 및 라벨 오류 수정
+        - 데이터 전처리와 비슷한 개념 (불용어 처리, stemming, lemmatization 등)
+    - Data Consistency
+    - Label Consistency: 라벨링 방법 체계화 (크라우드소싱 데이터 등)
+    - Data Tool: 라벨링 도구를 사용한 데이터 개선
+4. Data Augmentation: 사전 지식을 인코딩하기 위한 예제 추가
+    1. rule-based 기법: EDA(SR, RI, RS, RD), UDA
+    2. example interpolation 기법: MixUp, MSDA(Mixed Sample Data Augmentation)
+    3. Model-based technique: BT(Back-Translation), Fine-Tuning LLM for paraphrasing
+5. Synthetic Data: 인공적으로 생성된 데이터 활용
+6. Feature Engineering: 데이터 표현 방식 조정
+7. 데이터 이해를 위한 AI 알고리즘
    - Curriculum Learning: 쉬운 예제부터 어려운 예제 순으로 학습
    - Active Learning: 중요한 데이터를 우선적으로 라벨링
 
@@ -45,6 +53,9 @@
 ### Data-Centric Evaluation
 - 모델 성능 평가: 다양한 지표를 통해 데이터 중심 성능 평가 수행
 - Data Measurement: 데이터 품질과 가치 측정
+    - IAA (Inter-Annotator Agreement)
+        - 2명 이상의 어노테이터가 생성한 레이블이 얼마나 일관성 있는지에 관한 지표
+        - Cohen's Kappa, Fleiss' Kappa, Krippendorff's Aplha
 
 
 
@@ -56,6 +67,9 @@
 - 균형이 맞는 데이터
 - 서비스 요구사항에 맞는 데이터
 
+### Data Cascade
+- 데이터 문제로 발생하는 하위 태스크에서의 복합적인 부정적 이슈
+
 ### Data Management 프로세스
 - 데이터의 라이프사이클을 관리하고 효율적으로 활용할 수 있는 프로세스를 구축하는 일련의 과정
 - 데이터의 수집, 저장, 관리, 보호, 분석, 활용 등을 포함
@@ -63,7 +77,8 @@
 
 ### Data Flywheel
 - 반복적으로 개선되는 데이터-모델 피드백 루프
-
+- Model based Data-Centric AI
+    - 모델을 통해 에러를 발견하고 사람이 해결해야 함
 
 ## 4. DMOps
 - DMOps는 데이터 처리의 전 과정을 체계화하여 모든 유형의 태스크에 적용할 수 있는 범용 파이프라인을 제공

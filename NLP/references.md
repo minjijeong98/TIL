@@ -24,18 +24,18 @@
 - [Hidden Technical Debt in Machine Learning Systems](https://proceedings.neurips.cc/paper_files/paper/2015/file/86df7dcfd896fcaf2674f757a2463eba-Paper.pdf)
 - [DataPerf: Benchmarks for Data-Centric AI Development](https://arxiv.org/abs/2207.10062)
 
-
-
 ## 3. DMOps와 데이터 관리
 - [DMOps](https://arxiv.org/abs/2301.01228)
 - [DMOps, 현업에서 데이터 구축하기](https://www.content.upstage.ai/blog/tech/dmops-data-management-operation-and-recipes)
 - [Toward continual learning systems](https://www.gantry.io/blog/toward-continual-learning-systems)
 - [Three issues with handling data in AI models (Data! Data! Data!)](https://www.upstage.ai/feed/insight/why-is-data-labeling-important-for-ai)
 
-
 ## 4. AI 팀 구성 및 관리
 - [AI 모델 개발을 위한 효율적인 AI 팀 구성법](https://www.content.upstage.ai/blog/tech/ai-modeling/how-to-create-ai-team)
 
+---
+## AI 관련 전반적 동향 파악
+- https://newsletter.theaiedge.io/
 
 
 
