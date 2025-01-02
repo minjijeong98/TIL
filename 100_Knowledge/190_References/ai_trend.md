@@ -21,3 +21,6 @@
 
 ## AI 조직 관리
 - [AI 모델 개발을 위한 효율적인 AI 팀 구성법](https://www.content.upstage.ai/blog/tech/ai-modeling/how-to-create-ai-team)
+
+## PM
+- [토스는 이렇게 시작했습니다 | PO SESSION](https://www.youtube.com/watch?v=Tmj1HEFnKpE)
